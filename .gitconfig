@@ -1,0 +1,53 @@
+[user]
+	email = zfry@palantir.com
+    name = Zach Fry
+[merge]
+    tool = vimdiff
+[core]
+    autocrlf = false
+    ignorecase = true
+    safecrlf = true
+    symlinks = false
+    filemode = false
+    editor = vim
+[push]
+    default = upstream
+[alias]
+    ci = commit
+    st = status
+    co = checkout
+    br = branch --color -v
+    rb = rebase
+    rbi = rebase -i origin/master
+    ls = log --stat
+    staged = diff --cached --color
+    # Awesome gitk-in-cli like convenience
+    hlog = log --date-order --all --graph --format=\"%C(green)%H%Creset %C(yellow)%an%Creset %C(blue bold)%ar%Creset %C(red bold)%d%Creset%s\"
+    d = diff --color-words
+    gitkconflict = !gitk --left-right HEAD...MERGE_HEAD
+    amend = commit --amend -C HEAD
+    recents = for-each-ref --sort=-committerdate --format='%(refname:short)' refs/heads
+    hist = log -p -M -C --find-copies-harder --follow
+	ctags = !.git/hooks/ctags
+	h = 
+	g = grep --break --heading --line-number
+[core]
+    pager = less -FrX --ignore-case
+	excludesfile = ~/.gitignore_global
+    editor = vim
+    autocrlf = input
+[color]
+    diff = auto
+    branch = auto
+    interactive = auto
+	ui = auto
+[gc]
+    auto = 0
+[branch]
+    # rebase your branch when using "git pull"
+	autosetuprebase = always
+[init]
+	templatedir = ~/.git_template
+[grep]
+	extendRegexp = true
+	lineNumber = true

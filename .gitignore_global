@@ -1,0 +1,38 @@
+# Editor Files
+*.sw[op]
+~*
+*.sublime-workspace
+
+# Compiled Files
+*.py[cod]
+*.class
+
+# Archives
+*.[jwe]ar
+
+# OS Files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# CTags
+tags
+.tags*
+
+# VirtualEnv
+.env
+.venv
+venv
+VENV
+
+# Logging
+*.log
+logs/

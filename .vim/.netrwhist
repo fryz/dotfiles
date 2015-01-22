@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/zfry/git/deployment/conf/profanity'
+let g:netrw_dirhist_2='/Users/zfry/Documents/projects/servergame/importer/raw'
+let g:netrw_dirhist_3='/Users/zfry/Documents/projects/SemanticMatch/tvsm/tvsm'
+let g:netrw_dirhist_4='/Users/zfry/Documents/projects/SemanticMatch/.git'
+let g:netrw_dirhist_5='/Users/zfry/Documents/projects/SemanticMatch/tvsm/output/vector_spaces'
+let g:netrw_dirhist_6='/Users/zfry/git/hh/hedgehog/core/Server/src/com/palantir/finance/server/chronostore/mechanism'
+let g:netrw_dirhist_7='/Users/zfry/git/hh/supporting/Utils/src/com/palantir/finance/utils'
+let g:netrw_dirhist_8='/Users/zfry/Documents/projects/SemanticMatch/tvsm/output/mappings'
+let g:netrw_dirhist_9='/Users/zfry/Documents/projects/SemanticMatch/tvsm/output/vector_spaces'
