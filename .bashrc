@@ -22,9 +22,9 @@ fi
 # Git Prompt 
 if [ -f ~/.git-prompt.sh ]; then 
     source ~/.git-prompt.sh 
-    export PS1="${BGREEN}\u@\h ${BLUE}(${RED}\$(pwd)${BLUE})${YELLOW}\$(__git_ps1)\n ${RED}\$ ${NORMAL}"
+    export PS1="${BGREEN}\u@\h ${BLUE}(${RED}\$(pwd)${BLUE})${YELLOW}\$(__git_ps1)\n${YELLOW}[\$(date +%H:%M:%S)]${RED}\$ ${NORMAL}"
 else
-    export PS1="${BGREEN}\u@\h ${BLUE}(${RED}\$(pwd)${BLUE})\n ${RED}\$ ${NORMAL}"
+    export PS1="${BGREEN}\u@\h ${BLUE}(${RED}\$(pwd)${BLUE})\n${YELLOW}[\$(date +%H:%M:%S)]${RED}\$ ${NORMAL}"
 fi
 
 # avoid duplicates..
@@ -48,5 +48,3 @@ shopt -s expand_aliases
  
 # Use case-insensitive matching for filename expansion results
 shopt -s nocaseglob
-
-export PATH=$PATH:$HOME/bin
