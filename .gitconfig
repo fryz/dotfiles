@@ -1,5 +1,5 @@
 [user]
-	email = zfry@palantir.com
+    email = frydawg524@gmail.com
     name = Zach Fry
 [merge]
     tool = vimdiff
@@ -28,26 +28,23 @@
     amend = commit --amend -C HEAD
     recents = for-each-ref --sort=-committerdate --format='%(refname:short)' refs/heads
     hist = log -p -M -C --find-copies-harder --follow
-	ctags = !.git/hooks/ctags
-	h = 
-	g = grep --break --heading --line-number
+    ctags = !.git/hooks/ctags
+    g = grep --break --heading --line-number
 [core]
     pager = less -FrX --ignore-case
-	excludesfile = ~/.gitignore_global
+    excludesfile = ~/.gitignore_global
     editor = vim
     autocrlf = input
 [color]
     diff = auto
     branch = auto
     interactive = auto
-	ui = auto
+    ui = auto
 [gc]
     auto = 0
 [branch]
     # rebase your branch when using "git pull"
-	autosetuprebase = always
-[init]
-	templatedir = ~/.git_template
+    autosetuprebase = always
 [grep]
-	extendRegexp = true
-	lineNumber = true
+    extendRegexp = true
+    lineNumber = true
