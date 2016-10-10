@@ -18,9 +18,8 @@ set expandtab
 set incsearch
 set hlsearch
 set ignorecase
-set mouse=a
 set ruler
-set clipboard=autoselect
+set clipboard=unnamed
 
 color koehler
 "set background=dark
