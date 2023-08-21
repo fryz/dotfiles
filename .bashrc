@@ -19,13 +19,20 @@ if [ -f ~/.git-completion.bash ]; then
     source ~/.git-completion.bash
 fi
 
-# Git Prompt 
-if [ -f ~/.git-prompt.sh ]; then 
-    source ~/.git-prompt.sh 
-    export PS1="${BGREEN}\u@\h ${BLUE}(${RED}\$(pwd)${BLUE})${YELLOW}\$(__git_ps1)\n${YELLOW}[\$(date +%H:%M:%S)]${RED}\$ ${NORMAL}"
-else
-    export PS1="${BGREEN}\u@\h ${BLUE}(${RED}\$(pwd)${BLUE})\n${YELLOW}[\$(date +%H:%M:%S)]${RED}\$ ${NORMAL}"
+# PS1
+export PS1="${BGREEN}\u@\h ${BLUE}(${RED}\$(pwd)${BLUE})"
+
+if [ -f ~/.git-prompt.sh ]; then
+    source ~/.git-prompt.sh
+    export PS1="${BGREEN}\u@\h ${BLUE}(${RED}\$(pwd)${BLUE})${YELLOW}\$(__git_ps1)"
 fi
+if [ -f /opt/homebrew/opt/kube-ps1/share/kube-ps1.sh ]; then
+  source "/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh"
+  export KUBE_PS1_SYMBOL_ENABLE="false"
+  export PS1=$(printf "%*s\r%s\n" "$(tput cols)" "$(kube_ps1)" "$PS1")
+fi
+
+export PS1="$PS1\n${YELLOW}[\$(date +%H:%M:%S)]${RED}\$ ${NORMAL}"
 
 # avoid duplicates..
 export HISTCONTROL=ignoredups:erasedups
