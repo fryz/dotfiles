@@ -26,6 +26,8 @@ if [ -f ~/.git-prompt.sh ]; then
     source ~/.git-prompt.sh
     export PS1="${BGREEN}\u@\h ${BLUE}(${RED}\$(pwd)${BLUE})${YELLOW}\$(__git_ps1)"
 fi
+
+# https://github.com/jonmosco/kube-ps1
 if [ -f /opt/homebrew/opt/kube-ps1/share/kube-ps1.sh ]; then
   source "/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh"
   export KUBE_PS1_SYMBOL_ENABLE="false"
