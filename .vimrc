@@ -72,6 +72,3 @@ autocmd FileType python set complete+=k~/.vim/syntax/python.vim isk+=.,(
 
 "remove trailing whitespace from python files
 autocmd BufWritePre * :%s/\s\+$//e
-
-"pathogen
-execute pathogen#infect()
